@@ -1,0 +1,19 @@
+<form>
+<div class="form-group">
+      <input type="text" class="form-control" placeholder="Search By Item Name" />
+</div>
+</form>
+<br />
+<div>
+    <table class="table" id="myTable">
+        <thead>
+        <tr><th>Name</th><th class="sorting" (click)="sortByTime()">Time</th></tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of items">
+            <td>{{item.name}}</td>
+            <td>{{item.timestamp}}</td>
+        </tr>
+    </tbody>
+    </table>
+</div>
